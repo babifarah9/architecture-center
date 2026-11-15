@@ -24,6 +24,8 @@ When you build your multitenant solution in Azure, there are many elements that 
 
 - Understand whether you need to separate your tenants into different [tiers](./considerations/pricing-models.md#feature--and-service-level-based-pricing). Tiers might have different pricing, features, performance promises, and geographic locations.
 
+- Define how tenants can [customize and extend your solution](./considerations/customization.md) without creating tenant-specific code forks.
+
 - Based on your customers' requirements, decide on the [tenancy models](./considerations/tenancy-models.md) that are appropriate for various parts of your solution.  
 
 - When you're ready, sell your B2B multitenant solution by using the [Microsoft commercial marketplace](/partner-center/marketplace-offers/plan-saas-offer).  
@@ -75,6 +77,8 @@ When you build your multitenant solution in Azure, there are many elements that 
 - Understand the differences between [control planes](./considerations/control-planes.md) and data planes in your multitenant solution.  
 
 - Find the right balance for [deploying service updates](./considerations/updates.md). Consider both your tenants' requirements and your own operational requirements.  
+
+- Track the life cycles of external platforms, APIs, SDKs, services, and AI models that your solution depends on.
 
 - Monitor the health of the overall system and each tenant.  
 

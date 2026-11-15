@@ -12,6 +12,7 @@ ms.custom:
 categories:
  - management-and-governance
  - devops
+ai-usage: ai-assisted
 ---
 
 # Architectural approaches for the deployment and configuration of multitenant solutions
@@ -106,7 +107,7 @@ Use [deployment rings](/azure/well-architected/operational-excellence/safe-deplo
 
 Use [feature flags](/devops/operate/progressive-experimentation-feature-flags) to progressively expose new features or versions of your solution to different tenants or users without redeploying code. Consider using [Azure App Configuration](/azure/azure-app-configuration/overview) to manage your feature flags. For more information, see [Feature flags](../considerations/updates.md#feature-flags).
 
-Sometimes you must selectively enable specific features for specific customers. For example, you might have different [pricing tiers](../considerations/pricing-models.md) that allow access to certain capabilities. Feature flags aren't usually the right choice for these scenarios. Instead, consider building a process to track and enforce the *license entitlements* that each customer has.
+Feature flags aren't usually the right way to permanently provide different capabilities to specific tenants. Use configuration or entitlements instead. For guidance about selecting an approach, see [Tenant customization and extensibility](../considerations/customization.md).
 
 ## Antipatterns to avoid
 
@@ -114,7 +115,7 @@ When you deploy and configure multitenant solutions, avoid situations that inhib
 
 - **Manual deployment and testing:** Manual deployment processes add risk and slow your ability to deploy. Consider using pipelines for automated deployments, programmatically creating resources from your solution's code, or a combination of both.
 
-- **Specialized customizations for tenants:** Avoid deploying features or a configuration that only applies to a single tenant. This approach adds complexity to your deployments and testing processes. Instead, use the same resource types and codebase for each tenant. Use strategies like [feature flags](#feature-flags) for temporary changes or for features that are rolled out progressively. Or use [different pricing tiers](../considerations/pricing-models.md) with license entitlements to selectively enable features for tenants that require them. Use a consistent and automated deployment process, even for tenants that have isolated or dedicated resources.
+- **Tenant-specific forks:** Avoid tenant-specific code branches, infrastructure definitions, or deployment procedures that diverge from the shared baseline and require separate maintenance. Dedicated tenant deployments aren't forks when they use common code and infrastructure templates. Use a consistent, automated deployment process, including for isolated resources and different hosting models. For guidance about configuration, entitlements, extensions, and bespoke requirements, see [Tenant customization and extensibility](../considerations/customization.md).
 
 ## Tenant lists as configuration or data
 

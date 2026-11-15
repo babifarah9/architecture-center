@@ -5,6 +5,7 @@ In a multitenant architecture, you share some or all of your resources between t
 - How do you define what a *tenant* is, for your specific solution? Does a tenant correspond to a customer, a user, or a group of users like a team or a family?
 - How will you deploy your infrastructure to support multitenancy, and how much isolation will you have between tenants?
 - What commercial pricing models will your solution offer, and how will your pricing models affect your multitenancy requirements?
+- Which tenant-specific behavior will you support through configuration, entitlements, or extension points, and how will you avoid customer-specific product forks?
 - What level of service do you need to provide to your tenants, across dimensions like performance, resiliency, security, and compliance requirements like data residency?
 - How do you plan to grow your business or solution? Will it scale to the number of tenants you expect?
 - Do any of your tenants have unusual or special requirements? For example, does your biggest customer need higher performance or stronger guarantees than others?
