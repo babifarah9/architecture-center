@@ -93,7 +93,7 @@ The architecture diagram is illustrative. Adapt the identity, network, operation
 
 ## Contributors
 
-This article is maintained by Microsoft. It was originally contributed by an external community member.
+This architecture scenario was contributed by Bassem Abi-Farah, Converture Inc.
 
 ## Related resources
 
