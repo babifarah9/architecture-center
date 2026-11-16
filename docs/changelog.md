@@ -2,7 +2,7 @@
 title: What's New in Azure Architecture Center
 description: New and updated articles in Azure Architecture Center
 author: claytonsiemens77
-ms.date: 11/08/2026
+ms.date: 11/15/2026
 ai-usage: ai-generated
 ms.topic: whats-new
 ms.author: pnp
@@ -23,6 +23,15 @@ The following new and updated articles have recently been published in the Azure
 
 ### Updated articles
 
+- [Architectural approaches for governance and compliance in multitenant solutions](./guide/multitenant/approaches/governance-compliance.md) ([#b91156dbfd](https://github.com/MicrosoftDocs/architecture-center/commit/b91156dbfd))
+- [Considerations for multitenant control planes](./guide/multitenant/considerations/control-planes.md) ([#b91156dbfd](https://github.com/MicrosoftDocs/architecture-center/commit/b91156dbfd))
+- [Azure App Configuration considerations for multitenancy](./guide/multitenant/service/app-configuration.md) ([#b91156dbfd](https://github.com/MicrosoftDocs/architecture-center/commit/b91156dbfd))
+- [Azure Data Factory mission-critical architecture](./databases/architecture/azure-data-factory-mission-critical.yml) ([#e0301ca4e6](https://github.com/MicrosoftDocs/architecture-center/commit/e0301ca4e6))
+- [Multitenancy and Azure Queue Storage](./guide/multitenant/service/queue-storage.md) ([#1dcffb5100](https://github.com/MicrosoftDocs/architecture-center/commit/1dcffb5100))
+- [Use Azure Kubernetes Service (AKS) in a multitenant solution](./guide/multitenant/service/aks.md) ([#0779224469](https://github.com/MicrosoftDocs/architecture-center/commit/0779224469))
+- [Run Apache Cassandra on Azure VMs](./databases/guide/cassandra.md) ([#0201fbb27c](https://github.com/MicrosoftDocs/architecture-center/commit/0201fbb27c))
+- [Use Azure Front Door to secure AKS workloads](./example-scenario/aks-front-door/aks-front-door.yml) ([#dd63226feb](https://github.com/MicrosoftDocs/architecture-center/commit/dd63226feb))
+- [Multiregion BCDR for Azure Virtual Desktop](./example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr.md) ([#85d8b28f9d](https://github.com/MicrosoftDocs/architecture-center/commit/85d8b28f9d))
 - [Use Azure IoT Hub to privately upload files to an Azure Storage account](./example-scenario/iot/iot-private-file-upload.yml) ([#a0907817dc](https://github.com/MicrosoftDocs/architecture-center/commit/a0907817dc))
 - [Deploy microservices with Azure Container Apps and Dapr](./example-scenario/serverless/microservices-with-container-apps-dapr.yml) ([#999d240364](https://github.com/MicrosoftDocs/architecture-center/commit/999d240364))
 - [Patch and upgrade Azure Kubernetes Service worker nodes and Kubernetes versions](./operator-guides/aks/aks-upgrade-practices.md) ([#5e22094cc4](https://github.com/MicrosoftDocs/architecture-center/commit/5e22094cc4))
@@ -30,9 +39,9 @@ The following new and updated articles have recently been published in the Azure
 - [What is a data lake?](./data-guide/scenarios/data-lake.md) ([#95738fd895](https://github.com/MicrosoftDocs/architecture-center/commit/95738fd895))
 - [Massive-scale VWAN architecture design](./networking/architecture/massive-scale-azure-architecture.yml) ([#6cb6eadcbc](https://github.com/MicrosoftDocs/architecture-center/commit/6cb6eadcbc))
 - [Choose a Microsoft Fabric deployment pattern](./data-guide/technology-choices/fabric-deployment-patterns.md) ([#9a485e890e](https://github.com/MicrosoftDocs/architecture-center/commit/9a485e890e))
-- [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](./reference-architectures/containers/aks/baseline-aks.yml) ([#794cedb5eb](https://github.com/MicrosoftDocs/architecture-center/commit/794cedb5eb), [#0c29db71f4](https://github.com/MicrosoftDocs/architecture-center/commit/0c29db71f4))
+- [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](./reference-architectures/containers/aks/baseline-aks.yml) ([#794cedb5eb](https://github.com/MicrosoftDocs/architecture-center/commit/794cedb5eb), [#0c29db71f4](https://github.com/MicrosoftDocs/architecture-center/commit/0c29db71f4), [#7cbec6cb24](https://github.com/MicrosoftDocs/architecture-center/commit/7cbec6cb24))
 - [Azure Local hyperconverged baseline reference architecture](./hybrid/azure-local-baseline.yml) ([#09f067d676](https://github.com/MicrosoftDocs/architecture-center/commit/09f067d676))
-- [Workload identity and access in EKS and AKS](./aws-professional/eks-to-aks/workload-identity.md) ([#f30a6675b6](https://github.com/MicrosoftDocs/architecture-center/commit/f30a6675b6))
+- [Workload identity and access in EKS and AKS](./aws-professional/eks-to-aks/workload-identity.md) ([#f30a6675b6](https://github.com/MicrosoftDocs/architecture-center/commit/f30a6675b6), [#f268af2a58](https://github.com/MicrosoftDocs/architecture-center/commit/f268af2a58))
 - [SAP S/4HANA in Linux on Azure](./guide/sap/sap-s4hana.md) ([#989749885a](https://github.com/MicrosoftDocs/architecture-center/commit/989749885a))
 
 ## October 2026
