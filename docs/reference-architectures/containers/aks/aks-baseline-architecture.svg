@@ -94,13 +94,13 @@
 		.st79 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
 		.st80 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
 		.st81 {fill:#000000;font-family:Segoe UI;font-size:0.833336em;font-style:italic;font-weight:bold}
-		.st82 {fill:url(#grad0-714);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st83 {fill:none}
-		.st84 {fill:url(#grad0-725);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st85 {fill:url(#grad0-729);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st86 {fill:url(#grad0-733);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st87 {fill:url(#grad0-742);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st88 {fill:url(#grad0-746);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st82 {fill:url(#grad0-713);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st83 {fill:url(#grad0-717);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st84 {fill:url(#grad0-732);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st85 {fill:none}
+		.st86 {fill:url(#grad0-743);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st87 {fill:url(#grad0-747);stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st88 {fill:url(#grad0-751);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st89 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
@@ -227,36 +227,36 @@
 			<stop offset="0.22" stop-color="#32d4f5" stop-opacity="1"/>
 			<stop offset="1" stop-color="#198ab3" stop-opacity="1"/>
 		</linearGradient>
-		<linearGradient id="grad0-714" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
-			<stop offset="0.1" stop-color="#54aef0" stop-opacity="1"/>
-			<stop offset="0.44" stop-color="#379ce5" stop-opacity="1"/>
-			<stop offset="0.78" stop-color="#218ddc" stop-opacity="1"/>
-			<stop offset="1" stop-color="#1988d9" stop-opacity="1"/>
-		</linearGradient>
-		<linearGradient id="grad0-725" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
-			<stop offset="0" stop-color="#b1b3b3" stop-opacity="1"/>
-			<stop offset="0.215" stop-color="#bcbebd" stop-opacity="1"/>
-			<stop offset="0.685" stop-color="#d1d1cf" stop-opacity="1"/>
-			<stop offset="1" stop-color="#d9d9d6" stop-opacity="1"/>
-		</linearGradient>
-		<linearGradient id="grad0-729" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
-			<stop offset="0" stop-color="#4aa647" stop-opacity="1"/>
-			<stop offset="1" stop-color="#8de971" stop-opacity="1"/>
-		</linearGradient>
-		<linearGradient id="grad0-733" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
-			<stop offset="0" stop-color="#8de971" stop-opacity="1"/>
-			<stop offset="1" stop-color="#4aa647" stop-opacity="1"/>
-		</linearGradient>
-		<linearGradient id="grad0-742" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
+		<linearGradient id="grad0-713" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
 			<stop offset="0" stop-color="#1988d9" stop-opacity="1"/>
 			<stop offset="0.9" stop-color="#54aef0" stop-opacity="1"/>
 		</linearGradient>
-		<linearGradient id="grad0-746" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
+		<linearGradient id="grad0-717" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
 			<stop offset="0" stop-color="#198ab3" stop-opacity="1"/>
 			<stop offset="0.01" stop-color="#198bb4" stop-opacity="1"/>
 			<stop offset="0.44" stop-color="#27b2d7" stop-opacity="1"/>
 			<stop offset="0.79" stop-color="#2fcbed" stop-opacity="1"/>
 			<stop offset="1" stop-color="#32d4f5" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-732" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0.1" stop-color="#54aef0" stop-opacity="1"/>
+			<stop offset="0.44" stop-color="#379ce5" stop-opacity="1"/>
+			<stop offset="0.78" stop-color="#218ddc" stop-opacity="1"/>
+			<stop offset="1" stop-color="#1988d9" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-743" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
+			<stop offset="0" stop-color="#b1b3b3" stop-opacity="1"/>
+			<stop offset="0.215" stop-color="#bcbebd" stop-opacity="1"/>
+			<stop offset="0.685" stop-color="#d1d1cf" stop-opacity="1"/>
+			<stop offset="1" stop-color="#d9d9d6" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-747" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(-90 0.5 0.5)">
+			<stop offset="0" stop-color="#4aa647" stop-opacity="1"/>
+			<stop offset="1" stop-color="#8de971" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-751" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#8de971" stop-opacity="1"/>
+			<stop offset="1" stop-color="#4aa647" stop-opacity="1"/>
 		</linearGradient>
 	</defs>
 	<defs id="Markers">
@@ -1518,8 +1518,8 @@
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="514.881" width="132.75" height="70.1188" class="st2"/>
 			<image x="0" y="514.881" width="132.75" height="70.1188" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAABqYAAAODCAYAAADetLAsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYl
-						AUlSJPAAAGu3SURBVHhe7d3BkeNImibsFqE02LKRoATYw4iQt/9aIrQZBdgSIQXYQx1WgLzunlqEFCE1mLJRoH/zGrAnyh0RQcL9dTjJ
+						iVBORw0KGgoAAAANSUhEUgAABqYAAAODCAYAAADetLAsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAAGu3SURBVHhe7d3BkeNImibsFqE02LKRoATYw4iQt/9aIrQZBdgSIQXYQx1WgLzunlqEFCE1mLJRoH/zGrAnyh0RQcL9dTjJ
 						5/CYdX+VEXDAQTD4vXTgb//85z//BgAAAAAAAGlNAQAAAAAAABKaAgAAAAAAACQ0BQAAAAAAAEhoCgAAAAAAAJDQFAAAAAAAACChKQAA
 						AAAAAEBCUwAAAAAAAICEpgAAAAAAAAAJTQEAAAAAAAASmgIAAAAAAAAkNAUAAAAAAABIaAoAAAAAAACQ0BQAAAAAAAAgoSkAAAAAAABA
 						QlMAAAAAAACAhKYAAAAAAAAACU0BAAAAAAAAEpoCAAAAAAAAJDQFAAAAAAAASGgKAAAAAAAAkNAUAAAAAAAAIKEpAAAAAAAAQEJTAAAA
@@ -2656,120 +2656,36 @@
 			<v:textRect cx="53.3713" cy="577.406" width="106.75" height="15.1875"/>
 			<rect x="0" y="569.812" width="106.743" height="15.1875" class="st2"/>
 			<text x="36.24" y="580.41" class="st81" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>kubectl</text>		</g>
-		<g id="group1523-709" transform="translate(635.437,-114.096)" v:mID="1523" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(72000):26"/>
-			</v:userDefs>
-			<title>Sheet.1523</title>
-			<g id="group1524-710" transform="translate(1.9984E-13,-5.68074)" v:mID="1524" v:groupContext="group">
-				<title>Sheet.1524</title>
-				<g id="shape1525-711" v:mID="1525" v:groupContext="shape">
-					<title>Sheet.1525</title>
-					<path d="M21.94 581.71 C21.94 580.49 23.01 579.5 24.33 579.5 L26.07 579.5 C26.66 579.02 27.22 578.56 27.74 578.1
-								 C27.14 577.44 26.79 576.59 26.79 575.67 C26.79 573.58 28.63 571.88 30.89 571.88 C31.75 571.88 32.55
-								 572.13 33.21 572.55 C36.63 568.27 36.85 565.54 36.88 564.32 C36.99 561.32 36.56 553.51 27.9 552.89
-								 C23.73 552.6 19.88 554.94 18.51 558.58 C17.11 554.91 13.21 552.57 9 552.89 C0.45 553.51 0 561.33
-								 0.11 564.32 C0.11 566.46 0.8 573.29 18.51 585 C19.73 584.19 20.87 583.4 21.94 582.64 L21.94 581.71
-								 Z" class="st82"/>
-				</g>
-				<g id="shape1526-715" v:mID="1526" v:groupContext="shape" transform="translate(0,-0.0987408)">
-					<title>Sheet.1526</title>
-					<path d="M36.88 564.42 C36.99 561.42 36.56 553.61 27.9 552.99 C23.73 552.71 19.88 555.04 18.51 558.68 C17.11
-								 555.01 13.21 552.67 9 552.99 C0.45 553.61 0 561.42 0.11 564.42 C0.11 566.56 0.63 573.29 18.35 585
-								 L36.88 564.42 Z" class="st83"/>
-					<path d="M36.88 564.42 C36.99 561.42 36.56 553.61 27.9 552.99 C23.73 552.71 19.88 555.04 18.51 558.68 C17.11
-								 555.01 13.21 552.67 9 552.99 C0.45 553.61 0 561.42 0.11 564.42 C0.11 566.56 0.63 573.29 18.35 585"
-							class="st21"/>
-				</g>
-				<g id="shape1527-718" v:mID="1527" v:groupContext="shape" transform="translate(2.83127,-7.64926)">
-					<title>Sheet.1527</title>
-					<path d="M34.05 570.79 L25.39 570.79 C25.28 570.8 25.18 570.85 25.11 570.93 L22.49 575.11 C22.39 575.26 22.17
-								 575.3 22.01 575.21 C21.97 575.18 21.93 575.15 21.91 575.11 L18.16 568.54 C18 568.23 17.6 568.09
-								 17.27 568.24 C17.13 568.3 17.01 568.41 16.95 568.54 L13.36 578.43 C13.27 578.59 13.07 578.66 12.9
-								 578.58 C12.82 578.55 12.76 578.5 12.73 578.43 L9.65 571.85 C9.48 571.55 9.08 571.43 8.75 571.59
-								 C8.63 571.65 8.53 571.74 8.46 571.85 L4.27 578.83 C4.21 578.92 4.1 578.98 3.98 578.99 L0 578.99
-								 C0.6 579.83 1.25 580.64 1.95 581.42 L5.59 581.42 C5.71 581.43 5.82 581.37 5.87 581.26 L8.49 576.81
-								 C8.58 576.65 8.79 576.6 8.96 576.68 C9.01 576.71 9.06 576.75 9.09 576.81 L12.69 584.52 C12.82 584.84
-								 13.21 585 13.55 584.88 C13.73 584.82 13.87 584.69 13.94 584.52 L17.73 574.13 C17.79 573.97 17.98
-								 573.9 18.15 573.96 C18.23 573.99 18.3 574.05 18.33 574.13 L21.5 579.66 C21.66 579.96 22.06 580.07
-								 22.37 579.91 C22.49 579.85 22.58 579.77 22.64 579.66 L26.67 573.41 C26.73 573.31 26.83 573.26 26.95
-								 573.25 L33.94 573.25 L34.05 570.79 Z" class="st8"/>
-					<path d="M34.05 570.79 L25.39 570.79 C25.28 570.8 25.18 570.85 25.11 570.93 L22.49 575.11 C22.39 575.26 22.17
-								 575.3 22.01 575.21 C21.97 575.18 21.93 575.15 21.91 575.11 L18.16 568.54 C18 568.23 17.6 568.09
-								 17.27 568.24 C17.13 568.3 17.01 568.41 16.95 568.54 L13.36 578.43 C13.27 578.59 13.07 578.66 12.9
-								 578.58 C12.82 578.55 12.76 578.5 12.73 578.43 L9.65 571.85 C9.48 571.55 9.08 571.43 8.75 571.59
-								 C8.63 571.65 8.53 571.74 8.46 571.85 L4.27 578.83 C4.21 578.92 4.1 578.98 3.98 578.99 L0 578.99
-								 C0.6 579.83 1.25 580.64 1.95 581.42 L5.59 581.42 C5.71 581.43 5.82 581.37 5.87 581.26 L8.49 576.81
-								 C8.58 576.65 8.79 576.6 8.96 576.68 C9.01 576.71 9.06 576.75 9.09 576.81 L12.69 584.52 C12.82 584.84
-								 13.21 585 13.55 584.88 C13.73 584.82 13.87 584.69 13.94 584.52 L17.73 574.13 C17.79 573.97 17.98
-								 573.9 18.15 573.96 C18.23 573.99 18.3 574.05 18.33 574.13 L21.5 579.66 C21.66 579.96 22.06 580.07
-								 22.37 579.91 C22.49 579.85 22.58 579.77 22.64 579.66 L26.67 573.41 C26.73 573.31 26.83 573.26 26.95
-								 573.25 L33.94 573.25" class="st21"/>
-				</g>
-			</g>
-			<g id="group1528-721" transform="translate(20.5768,0)" v:mID="1528" v:groupContext="group">
-				<title>Sheet.1528</title>
-				<g id="shape1529-722" v:mID="1529" v:groupContext="shape" transform="translate(2.38974,-2.83617)">
-					<title>Sheet.1529</title>
-					<path d="M14.34 577.6 L8.61 577.6 L8.61 572.26 L7.24 572.26 L7.24 577.6 L1.37 577.6 C0.61 577.6 0 578.17 0 578.87
-								 L0 585 L1.37 585 L1.37 578.87 L7.24 578.87 L7.24 585 L8.61 585 L8.61 578.87 L14.34 578.87 L14.34
-								 584.89 L15.7 584.89 L15.7 578.87 C15.7 578.17 15.09 577.6 14.34 577.6 Z" class="st84"/>
-				</g>
-				<g id="shape1530-726" v:mID="1530" v:groupContext="shape">
-					<title>Sheet.1530</title>
-					<path d="M3.07 579.32 C1.38 579.32 0 580.59 0 582.16 C0 583.73 1.38 585 3.07 585 C4.77 585 6.15 583.73 6.15 582.16
-								 C6.15 580.59 4.77 579.32 3.07 579.32 ZM17.41 579.32 C15.71 579.32 14.34 580.59 14.34 582.16 C14.34
-								 583.73 15.71 585 17.41 585 C19.11 585 20.49 583.73 20.49 582.16 C20.49 580.59 19.11 579.32 17.41
-								 579.32 ZM10.31 579.32 C8.61 579.32 7.24 580.59 7.24 582.16 C7.24 583.73 8.61 585 10.31 585 C12.01
-								 585 13.39 583.73 13.39 582.16 C13.39 580.59 12.01 579.32 10.31 579.32 Z" class="st85"/>
-				</g>
-				<g id="shape1531-730" v:mID="1531" v:groupContext="shape" transform="translate(7.23749,-12.1724)">
-					<title>Sheet.1531</title>
-					<ellipse cx="3.07479" cy="582.162" rx="3.07479" ry="2.83827" class="st86"/>
-				</g>
-			</g>
-		</g>
-		<g id="shape1532-734" v:mID="1532" v:groupContext="shape" transform="translate(627,-90.75)">
-			<title>Sheet.1532</title>
-			<desc>Health Model</desc>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(73000):26"/>
-			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="28.2898" cy="575.438" width="56.58" height="19.125"/>
-			<rect x="0" y="565.875" width="56.5796" height="19.125" class="st2"/>
-			<text x="13.85" y="572.44" class="st3" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Health <tspan
-						x="14.1" dy="1.2em" class="st4">Model</tspan></text>		</g>
-		<g id="group1533-738" transform="translate(642.375,-188.487)" v:mID="1533" v:groupContext="group">
+		<g id="group1533-709" transform="translate(642.553,-119.525)" v:mID="1533" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(74000):26"/>
 			</v:userDefs>
 			<title>Icon-manage-307</title>
-			<g id="shape1534-739" v:mID="1534" v:groupContext="shape">
+			<g id="shape1534-710" v:mID="1534" v:groupContext="shape">
 				<title>Sheet.1534</title>
-				<path d="M7.55 578.53 L14.02 578.53 L14.02 585 L7.55 585 L7.55 578.53 ZM0.9 585 L6.47 585 L6.47 578.53 L0 578.53
-							 L0 584.1 a0.898669 0.898669 -180 0 0 0.898669 0.898669 ZM0 577.51 L6.47 577.51 L6.47 570.98 L0 570.98
-							 L0 577.51 Z" class="st87"/>
+				<path d="M8.96 577.32 L16.65 577.32 L16.65 585 L8.96 585 L8.96 577.32 ZM1.07 585 L7.68 585 L7.68 577.32 L0 577.32
+							 L0 583.93 A1.0671 1.0671 -180 0 0 1.07 585 ZM0 576.11 L7.68 576.11 L7.68 568.35 L0 568.35 L0 576.11
+							 Z" class="st82"/>
 			</g>
-			<g id="shape1535-743" v:mID="1535" v:groupContext="shape" transform="translate(7.48891,-7.41402)">
+			<g id="shape1535-714" v:mID="1535" v:groupContext="shape" transform="translate(8.89253,-8.8036)">
 				<title>Sheet.1535</title>
-				<path d="M8.91 567.1 A8.82193 8.82193 0 0 1 17.82 576.09 A8.82193 8.82193 0 0 1 8.91 585 L0 585 L0 576.01 A8.82193
-							 8.82193 0 0 1 8.91 567.1 Z" class="st88"/>
+				<path d="M10.58 563.75 A10.4754 10.4754 0 0 1 21.16 574.42 A10.4754 10.4754 0 0 1 10.58 585 L0 585 L0 574.33 A10.4754
+							 10.4754 0 0 1 10.58 563.75 Z" class="st83"/>
 			</g>
-			<g id="shape1536-747" v:mID="1536" v:groupContext="shape" transform="translate(10.5444,-11.5629)">
+			<g id="shape1536-718" v:mID="1536" v:groupContext="shape" transform="translate(12.5207,-13.7301)">
 				<title>Sheet.1536</title>
-				<rect x="0" y="578.889" width="2.03698" height="6.11095" class="st17"/>
+				<rect x="0" y="577.744" width="2.41877" height="7.2563" class="st17"/>
 			</g>
-			<g id="shape1537-749" v:mID="1537" v:groupContext="shape" transform="translate(14.6183,-11.5629)">
+			<g id="shape1537-720" v:mID="1537" v:groupContext="shape" transform="translate(17.3582,-13.7301)">
 				<title>Sheet.1537</title>
-				<rect x="0" y="580.926" width="2.03698" height="4.07396" class="st17"/>
+				<rect x="0" y="580.162" width="2.41877" height="4.83753" class="st17"/>
 			</g>
-			<g id="shape1538-751" v:mID="1538" v:groupContext="shape" transform="translate(18.6923,-11.5629)">
+			<g id="shape1538-722" v:mID="1538" v:groupContext="shape" transform="translate(22.1957,-13.7301)">
 				<title>Sheet.1538</title>
-				<rect x="0" y="576.852" width="2.03698" height="8.14793" class="st17"/>
+				<rect x="0" y="575.325" width="2.41877" height="9.67507" class="st17"/>
 			</g>
 		</g>
-		<g id="shape1539-753" v:mID="1539" v:groupContext="shape" transform="translate(615.5,-163.5)">
+		<g id="shape1539-724" v:mID="1539" v:groupContext="shape" transform="translate(616.204,-89.1711)">
 			<title>Sheet.1539</title>
 			<desc>Log Analytics</desc>
 			<v:userDefs>
@@ -2779,5 +2695,87 @@
 			<v:textRect cx="39.0438" cy="572.963" width="78.09" height="24.075"/>
 			<rect x="0" y="560.925" width="78.0875" height="24.075" class="st2"/>
 			<text x="9.88" y="575.96" class="st3" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Log Analytics</text>		</g>
+		<g id="group1523-727" transform="translate(642.375,-188.949)" v:mID="1523" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(72000):26"/>
+			</v:userDefs>
+			<title>Sheet.1523</title>
+			<g id="group1524-728" transform="translate(1.43885E-13,-3.89092)" v:mID="1524" v:groupContext="group">
+				<title>Sheet.1524</title>
+				<g id="shape1525-729" v:mID="1525" v:groupContext="shape">
+					<title>Sheet.1525</title>
+					<path d="M15.03 582.75 C15.03 581.91 15.76 581.23 16.67 581.23 L17.86 581.23 C18.26 580.91 18.64 580.59 19 580.27
+								 C18.59 579.82 18.35 579.24 18.35 578.61 C18.35 577.18 19.61 576.02 21.16 576.02 C21.75 576.02 22.29
+								 576.18 22.75 576.47 C25.09 573.54 25.24 571.67 25.26 570.83 C25.34 568.78 25.04 563.43 19.11 563.01
+								 C16.26 562.81 13.62 564.41 12.68 566.91 C11.72 564.39 9.04 562.79 6.17 563.01 C0.31 563.43 0 568.78
+								 0.07 570.84 C0.07 572.3 0.55 576.98 12.68 585 C13.52 584.44 14.3 583.9 15.03 583.38 L15.03 582.75
+								 Z" class="st84"/>
+				</g>
+				<g id="shape1526-733" v:mID="1526" v:groupContext="shape" transform="translate(0,-0.0676307)">
+					<title>Sheet.1526</title>
+					<path d="M25.26 570.9 C25.34 568.85 25.04 563.5 19.11 563.08 C16.25 562.88 13.61 564.48 12.68 566.98 C11.72 564.46
+								 9.04 562.86 6.17 563.08 C0.31 563.5 0 568.85 0.07 570.9 C0.07 572.37 0.43 576.98 12.57 585 L25.26
+								 570.9 Z" class="st85"/>
+					<path d="M25.26 570.9 C25.34 568.85 25.04 563.5 19.11 563.08 C16.25 562.88 13.61 564.48 12.68 566.98 C11.72 564.46
+								 9.04 562.86 6.17 563.08 C0.31 563.5 0 568.85 0.07 570.9 C0.07 572.37 0.43 576.98 12.57 585"
+							class="st21"/>
+				</g>
+				<g id="shape1527-736" v:mID="1527" v:groupContext="shape" transform="translate(1.93923,-5.23922)">
+					<title>Sheet.1527</title>
+					<path d="M23.32 575.27 L17.39 575.27 C17.32 575.27 17.24 575.31 17.2 575.36 L15.4 578.23 C15.33 578.33 15.19
+								 578.36 15.08 578.29 C15.05 578.28 15.02 578.25 15 578.23 L12.44 573.72 C12.33 573.51 12.06 573.42
+								 11.83 573.52 C11.73 573.56 11.65 573.63 11.61 573.72 L9.15 580.5 C9.09 580.61 8.95 580.65 8.83 580.6
+								 C8.78 580.58 8.74 580.55 8.72 580.5 L6.61 576 C6.5 575.79 6.22 575.71 5.99 575.82 C5.91 575.86 5.84
+								 575.92 5.8 576 L2.92 580.77 C2.88 580.84 2.81 580.88 2.73 580.88 L0 580.88 C0.41 581.46 0.85 582.02
+								 1.33 582.55 L3.83 582.55 C3.91 582.56 3.99 582.51 4.02 582.44 L5.81 579.39 C5.88 579.28 6.02 579.24
+								 6.14 579.3 C6.17 579.32 6.21 579.35 6.23 579.39 L8.69 584.67 C8.78 584.89 9.04 585 9.28 584.92 C9.4
+								 584.87 9.5 584.79 9.55 584.67 L12.14 577.55 C12.19 577.45 12.32 577.4 12.43 577.44 C12.49 577.46
+								 12.53 577.5 12.56 577.55 L14.72 581.35 C14.84 581.55 15.11 581.62 15.33 581.51 C15.4 581.48 15.47
+								 581.42 15.51 581.35 L18.27 577.06 C18.31 577 18.38 576.96 18.46 576.95 L23.25 576.95 L23.32 575.27
+								 Z" class="st8"/>
+					<path d="M23.32 575.27 L17.39 575.27 C17.32 575.27 17.24 575.31 17.2 575.36 L15.4 578.23 C15.33 578.33 15.19
+								 578.36 15.08 578.29 C15.05 578.28 15.02 578.25 15 578.23 L12.44 573.72 C12.33 573.51 12.06 573.42
+								 11.83 573.52 C11.73 573.56 11.65 573.63 11.61 573.72 L9.15 580.5 C9.09 580.61 8.95 580.65 8.83 580.6
+								 C8.78 580.58 8.74 580.55 8.72 580.5 L6.61 576 C6.5 575.79 6.22 575.71 5.99 575.82 C5.91 575.86 5.84
+								 575.92 5.8 576 L2.92 580.77 C2.88 580.84 2.81 580.88 2.73 580.88 L0 580.88 C0.41 581.46 0.85 582.02
+								 1.33 582.55 L3.83 582.55 C3.91 582.56 3.99 582.51 4.02 582.44 L5.81 579.39 C5.88 579.28 6.02 579.24
+								 6.14 579.3 C6.17 579.32 6.21 579.35 6.23 579.39 L8.69 584.67 C8.78 584.89 9.04 585 9.28 584.92 C9.4
+								 584.87 9.5 584.79 9.55 584.67 L12.14 577.55 C12.19 577.45 12.32 577.4 12.43 577.44 C12.49 577.46
+								 12.53 577.5 12.56 577.55 L14.72 581.35 C14.84 581.55 15.11 581.62 15.33 581.51 C15.4 581.48 15.47
+								 581.42 15.51 581.35 L18.27 577.06 C18.31 577 18.38 576.96 18.46 576.95 L23.25 576.95" class="st21"/>
+				</g>
+			</g>
+			<g id="group1528-739" transform="translate(14.0937,0)" v:mID="1528" v:groupContext="group">
+				<title>Sheet.1528</title>
+				<g id="shape1529-740" v:mID="1529" v:groupContext="shape" transform="translate(1.63681,-1.94258)">
+					<title>Sheet.1529</title>
+					<path d="M9.82 579.93 L5.89 579.93 L5.89 576.27 L4.96 576.27 L4.96 579.93 L0.94 579.93 C0.42 579.93 0 580.32
+								 0 580.8 L0 585 L0.94 585 L0.94 580.8 L4.96 580.8 L4.96 585 L5.89 585 L5.89 580.8 L9.82 580.8 L9.82
+								 584.92 L10.76 584.92 L10.76 580.8 C10.76 580.32 10.34 579.93 9.82 579.93 Z" class="st86"/>
+				</g>
+				<g id="shape1530-744" v:mID="1530" v:groupContext="shape">
+					<title>Sheet.1530</title>
+					<path d="M2.11 581.11 C0.94 581.11 0 581.98 0 583.06 C0 584.13 0.94 585 2.11 585 C3.27 585 4.21 584.13 4.21 583.06
+								 C4.21 581.98 3.27 581.11 2.11 581.11 ZM11.93 581.11 C10.76 581.11 9.82 581.98 9.82 583.06 C9.82
+								 584.13 10.76 585 11.93 585 C13.09 585 14.03 584.13 14.03 583.06 C14.03 581.98 13.09 581.11 11.93
+								 581.11 ZM7.06 581.11 C5.9 581.11 4.96 581.98 4.96 583.06 C4.96 584.13 5.9 585 7.06 585 C8.23 585
+								 9.17 584.13 9.17 583.06 C9.17 581.98 8.23 581.11 7.06 581.11 Z" class="st87"/>
+				</g>
+				<g id="shape1531-748" v:mID="1531" v:groupContext="shape" transform="translate(4.95718,-8.33728)">
+					<title>Sheet.1531</title>
+					<ellipse cx="2.10602" cy="583.056" rx="2.10602" ry="1.94402" class="st88"/>
+				</g>
+			</g>
+		</g>
+		<g id="shape1532-752" v:mID="1532" v:groupContext="shape" transform="translate(620.54,-166.091)">
+			<title>Sheet.1532</title>
+			<desc>Health Model</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(73000):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="35.25" cy="575.438" width="70.51" height="19.125"/>
+			<rect x="0" y="565.875" width="70.5" height="19.125" class="st2"/>
+			<text x="5.25" y="578.44" class="st3" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Health Model</text>		</g>
 	</g>
 </svg>
