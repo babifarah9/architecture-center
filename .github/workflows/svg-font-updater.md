@@ -1,5 +1,6 @@
 ---
-name: svg-font-updater
+emoji: "🔤"
+name: SVG font updater
 description: Update primary and fallback font stacks in up to five randomly selected SVGs per day.
 intent: Standardize fonts in repository SVGs through small, reviewable pull requests.
 private: true
