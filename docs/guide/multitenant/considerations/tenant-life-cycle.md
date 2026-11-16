@@ -7,6 +7,7 @@ ms.date: 06/13/2025
 ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom: arb-saas
+ai-usage: ai-assisted
 ---
 
 # Tenant life cycle considerations in multitenant solutions
@@ -38,10 +39,32 @@ When you onboard a new tenant, consider the following factors:
 - **Compliance:** Identify compliance standards that the tenant must meet. These standards might include the Payment Card Industry Data Security Standard (PCI DSS) or the Health Insurance Portability and Accountability Act (HIPAA).
 - **Disaster recovery:** Confirm whether the tenant has specific disaster recovery requirements, such as a recovery time objective (RTO) or a recovery point objective (RPO). Determine whether these guarantees differ from the ones that you provide to other tenants.
 - **Information:** Define what information you need to fully onboard the tenant. For example, you might need their organization's legal name or their company logo, including the file size and format.
-- **Billing:** Determine whether the platform provides different pricing options and billing models.
+- **Billing and commercial arrangements:** Determine whether the platform provides different pricing options and billing models. Decide how a purchase, contract, or subscription activates the tenant and its entitlements. Plan what happens if there's a failure between commercial activation and technical provisioning.
 - **Environments:** Identify whether the tenant requires preproduction environments. Clarify whether the environment must be always available or can be provisioned on demand.
 
 After you onboard tenants, they move into a business-as-usual state. But important life cycle events can still occur during this state.
+
+## Coordinate subscription and tenant states
+
+If you sell your solution commercially, distinguish the state of a customer's subscription from the state of the technical tenant. The systems that manage these states might update at different times.
+
+For example, you might use the following states:
+
+| Commercial state | Possible tenant state | Considerations |
+| --- | --- | --- |
+| Pending activation | Provisioning | Don't provide full service until the purchase and required configuration are validated. |
+| Active | Active | Apply the purchased entitlements and service-level characteristics. |
+| Plan change pending | Active or migrating | Determine whether the change only affects entitlements or requires infrastructure changes. |
+| Payment problem or grace period | Active or restricted | Define which capabilities remain available and how you notify the tenant. |
+| Suspended | Deactivated | Block new activity while preserving data according to your contract and retention policy. |
+| Canceled | Deactivated or offboarding | Decide when cancellation becomes effective and when retention begins. |
+| Expired retention period | Offboarded | Remove data, resources, identities, access, and other tenant artifacts. |
+
+Distributed workflows for state transitions can have unpredictable failures at any point. Design transitions to tolerate duplicate, delayed, and out-of-order events.
+
+Keep an audit trail, and periodically reconcile tenant, entitlement, and subscription state. Don't immediately delete tenant data when a subscription is suspended or canceled unless your contract or legal requirements require deletion. Use a distinct deactivated state when you need to preserve data for reactivation, export, dispute resolution, or a retention period.
+
+For more information about orchestrating these transitions, see [Considerations for multitenant control planes](control-planes.md#coordinate-the-commercial-and-technical-life-cycles).
 
 ## Update tenants' infrastructure
 
@@ -94,7 +117,12 @@ Sometimes you need to remove tenants from your solution. In a multitenant soluti
 - **Retention period:** Determine how long to maintain the customer data. Identify any legal requirements that mandate data destruction after a specific period.
 
 - **Reonboarding:** Decide whether to support reonboarding. Clarify whether the tenant's data remains available during the retention period.
+
 - **Rebalancing:** If you run shared infrastructure, assess whether you need to rebalance tenant allocations after offboarding.
+
+- **Commercial records:** Retain the billing, metering, entitlement, and audit records that you need for financial, contractual, or legal purposes, even if you delete tenant workload data.
+
+- **External systems:** Remove or close subscriptions, support access, and integrations that are associated with the tenant.
 
 ## Deactivate and reactivate tenants
 
@@ -105,6 +133,8 @@ You might need to deactivate or reactivate a customer's account. Consider the fo
 - A customer can't be billed, and you need to deactivate the subscription.
 
 Deactivation differs from offboarding because it's intended to be a temporary state. However, after a period of time, you might choose to offboard a deactivated tenant.
+
+Define whether deactivation blocks all access or only billable operations. Consider administrator access, data export, support access, background processing, integrations, and usage that continues to create costs while a tenant is deactivated.
 
 ## Contributors
 

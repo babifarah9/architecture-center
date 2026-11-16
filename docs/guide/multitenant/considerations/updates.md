@@ -7,6 +7,7 @@ ms.date: 06/25/2025
 ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom: arb-saas
+ai-usage: ai-assisted
 ---
 
 # Considerations for updating a multitenant solution
@@ -143,6 +144,21 @@ You can determine how many rings to create and what each ring means for your own
 ### API versions
 
 If your service exposes an external API, consider that any updates you apply might affect the way that customers or partners integrate with your platform. In particular, you need to be conscious of breaking changes to your APIs. Consider using [an API versioning strategy](../../../best-practices/api-design.md#implement-versioning) to mitigate the risk of updates to your API.
+
+## Manage external platform dependencies
+
+Your solution might depend on external cloud services, APIs, SDKs, identity platforms, commerce systems, AI models, or client platforms. These dependencies can change independently from your application and might have different update, versioning, and retirement policies.
+
+For each critical dependency:
+
+- **Evaluate its suitability:** Assess its maturity, support policy, regional availability, quotas, and service-level commitments before you make it central to your product. Be careful when making contractual commitments that exceed a dependency's published guarantees.
+- **Maintain its visibility:** Track version, deprecation, retirement, and breaking-change notices. Record which tenants, deployment stamps, and product versions use each dependency version.
+- **Protect your solution:** Use compatibility tests to detect changes in external APIs, SDKs, protocols, and model behavior. Where appropriate, isolate volatile integrations behind internal interfaces, and define fallback or degraded behavior for outages and incompatible changes.
+- **Plan migrations:** Plan and test migration to replacement versions before support ends. Include dependency migrations in product roadmaps, customer communications, and support planning.
+
+Some dependencies, such as generative AI models, can change cost, latency, capacity, or output behavior between versions. Evaluate replacements against your quality, safety, performance, regional, and cost requirements instead of treating a version change as a routine package update.
+
+When different tenants use different versions of an external dependency, account for the same testing, support, security, and operational costs that apply when you maintain multiple versions of your own solution.
 
 ## Contributors
 

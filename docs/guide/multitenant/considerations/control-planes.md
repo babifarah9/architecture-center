@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom:
  - arb-saas
+ai-usage: ai-assisted
 ---
 
 # Considerations for multitenant control planes
@@ -39,6 +40,7 @@ In general, a control plane might have many of the following core responsibiliti
 - **Resource configuration:** It [reconfigures shared resources](#manage-shared-components) to recognize new tenants. For example, the control plane might configure network routing to ensure that incoming traffic [reaches the correct tenant's resources](map-requests.yml), or you might need to scale your resource capacity.
 - **Tenant configuration:** It stores and manages the configuration of each tenant.
 - **Tenant life cycle management:** It handles [tenant life cycle events](tenant-life-cycle.md), including onboarding, relocating, and offboarding tenants.
+- **Commercial lifecycle integration:** It coordinates subscription, plan, entitlement, billing, and tenant states with external commerce or billing systems.
 - **Telemetry:** It tracks each tenant's use of your features and the performance of the system.
 - **Consumption tracking:** It [measures and aggregates each tenant's resource consumption](measure-consumption.md). Consumption metrics might inform your billing systems or support resource governance.
 
@@ -148,8 +150,8 @@ For example, when you onboard a new tenant, your control plane might run the fol
 1. **Deploy a new database.** This Azure deployment operation might take several minutes to complete.
 
 1. **Update your tenant metadata catalog.** This action might involve running a command against an Azure SQL database.
-1. **Send a welcome email to the new tenant.** This action invokes a non-Microsoft API to send the email.
-1. **Update your billing system to prepare to invoice the new tenant.** This action invokes a non-Microsoft API that occasionally fails.
+1. **Send a welcome email to the new tenant.** This action invokes a third-party API to send the email.
+1. **Update or confirm the commercial subscription.** This action might invoke an external commerce or billing API that's independent from tenant provisioning.
 1. **Update your customer relationship management (CRM) system to track the new tenant.** This action invokes a non-Microsoft API.
 
 If any step in the sequence fails, consider how to respond:
@@ -160,6 +162,25 @@ If any step in the sequence fails, consider how to respond:
 - Abandon the workflow and trigger a manual recovery process.
 
 Also consider the user experience for each failure scenario.
+
+## Coordinate the commercial and technical life cycles
+
+For a commercial software as a service (SaaS) solution, the control plane might need to coordinate the customer's commercial subscription with the technical tenant lifecycle. These workflows are related, but don't assume that they're identical or that every state transition succeeds immediately.
+
+A typical activation workflow might include the following operations:
+
+1. Receive a purchase or subscription event from a commerce or billing system.
+1. Validate the offer, plan, customer, and subscription identifiers.
+1. Create a tenant or associate the subscription with an existing tenant.
+1. Provision or configure the tenant's resources.
+1. Activate the tenant's [entitlements](identity.md#entitlements-and-licensing), if applicable.
+1. Confirm activation to the external system.
+
+After activation, the control plane might also coordinate plan changes, entitlement changes, usage metering, suspension, reactivation, cancellation, and offboarding.
+
+Treat these operations as distributed workflows. External systems can send duplicate, delayed, or out-of-order events. They can also become unavailable after part of a workflow succeeds, so design your processes to be resilient and recoverable.
+
+For customer-hosted deployments, determine how the control plane detects and enforces entitlements and access control when the workload is disconnected or when the tenant restricts provider access. For more information, see [Choose a hosting and management model](tenancy-models.md#choose-a-hosting-and-management-model).
 
 ## Manage shared components
 

@@ -7,6 +7,7 @@ ms.date: 06/11/2025
 ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom: arb-saas
+ai-usage: ai-assisted
 ---
 
 # Tenancy models for a multitenant solution
@@ -163,6 +164,8 @@ Here's an example that illustrates a shared deployment for some tenants and a si
 
 **Risks:** Your codebase needs to be designed to support both multitenant and single-tenant deployments. If you plan to allow migration between deployments, you need to consider how to migrate customers from a multitenant deployment to their own single-tenant deployment. You also need to know which of your tenants are on each deployment so that you can communicate information about system problems or upgrades to the relevant customers.
 
+A vertically partitioned model can also include different [hosting and management models](#choose-a-hosting-and-management-model). For example, most tenants might use provider-hosted shared infrastructure, while some tenants use provider-managed dedicated infrastructure in their own subscriptions.
+
 ### Horizontally partitioned deployments
 
 You can also horizontally partition your deployments. In a horizontal deployment, you have some shared components but maintain other components with single-tenant deployments. For example, you can build a single application tier and then deploy individual databases for each tenant, as shown in this diagram:
@@ -174,6 +177,41 @@ You can also horizontally partition your deployments. In a horizontal deployment
 **Benefits:** Horizontally partitioned deployments can help you mitigate a noisy neighbor problem. If you identify that specific components cause most of the load on your system, then you can deploy separate components for each tenant. For example, your databases might absorb most of your system's load because the query load is high. If a single tenant sends a large number of requests to your solution, the performance of a database might be negatively affected, but other tenants' databases and shared components, like the application tier, remain unaffected.
 
 **Risks:** With a horizontally partitioned deployment, you still need to consider the automated deployment and management of your components, especially the components that a single tenant uses.
+
+## Choose a hosting and management model
+
+In addition to deciding which resources tenants share, decide where the resources run and who manages them. Hosting and management are separate decisions from tenant isolation. For example, a dedicated deployment can run in your Azure subscription or in a tenant's subscription.
+
+Common models include:
+
+| Hosting model | Resource ownership | Operations | Typical reasons to use the model |
+| --- | --- | --- | --- |
+| Provider-hosted shared deployment | You own the resources, and multiple tenants share them. | You operate the full solution. | Cost efficiency, centralized operations, and rapid updates. |
+| Provider-hosted dedicated deployment | You own resources dedicated to one tenant. | You operate the full solution. | Stronger isolation, tenant-specific regions, or higher service levels. |
+| Provider-managed deployment in a tenant subscription | The tenant owns the Azure subscription and resources. You receive delegated or application access to manage them. | You and the tenant share operational responsibilities. | Tenant procurement, network, data residency, or governance requirements. |
+| Tenant-managed deployment | The tenant deploys and operates the solution from artifacts that you provide. | The tenant operates the deployment, and you support the product. | Disconnected environments or requirements that prohibit provider access. |
+| Hybrid or edge deployment | Components run in both provider and tenant environments. | Responsibilities differ by component. | Latency, offline operation, industrial processing, or local data processing. |
+
+You can offer more than one model, but every additional model increases engineering, testing, release, support, and documentation complexity. Use a common codebase and deployment artifacts wherever possible. Avoid creating permanent product forks for individual hosting models.
+
+For each model, define these operational boundaries:
+
+- **Delivery and change management:** Specify who provisions and validates each component, initiates updates, and manages configuration. Define how long tenants can defer updates, how many versions you support, and how you detect unsupported configuration drift.
+- **Operations and resilience:** Define who monitors the deployment and performs backups, restores, failover, and disaster recovery tests. Specify which health and diagnostic data you can collect and whether tenants can control or redact it. Use time-bound, least-privileged, and auditable support access.
+- **Security:** Assign responsibility for identities, secrets, certificates, network controls, vulnerability remediation, and incident response.
+- **Commercial lifecycle:** Define how you activate entitlements and measure usage when components run outside your environment. During offboarding, remove provider access, identities, secrets, telemetry connections, and provider-owned components.
+
+If tenants can move between hosting models, preserve the tenant's logical identity and plan how to migrate data, configuration, identities, domain names, entitlements, and audit history.
+
+### Design for supportability
+
+Customer-hosted and hybrid deployments reduce your control over the runtime environment. Design these models so that you can diagnose problems without requiring unrestricted access.
+
+Consider providing:
+
+- **Diagnostics:** Provide tenant-accessible health, configuration, and version reports, along with diagnostic bundles that avoid collecting unrelated sensitive data.
+- **Deployment validation:** Use prerequisite checks, configuration validation, and drift detection to identify unsupported deployments.
+- **Cross-environment troubleshooting:** Use correlation identifiers across provider and tenant components. Document degraded or disconnected modes to help isolate failures across provider, tenant, and external systems.
 
 ## Test your isolation model
 
