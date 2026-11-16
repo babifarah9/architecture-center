@@ -294,7 +294,7 @@ Both VM sizes in the following examples support [ephemeral OS disks](/azure/virt
 | `Standard_E2bds_v5` | 60 | 75 | Ephemeral. | The OS disk fits within temporary storage capacity. |
 | `Standard_E4bds_v5` | 100 | 150 | Ephemeral. | The OS disk fits within temporary storage capacity. |
 
-If you don't specify an OS disk size, see [Default OS disk sizing in AKS](/azure/aks/concepts-storage#default-os-disk-sizing-in-aks).
+We recommend you set an OS disk size, but if you don't a [default OS disk size in AKS](/azure/aks/concepts-storage#default-os-disk-sizing-in-aks) is applied.
 
 ### Customer-managed keys
 
