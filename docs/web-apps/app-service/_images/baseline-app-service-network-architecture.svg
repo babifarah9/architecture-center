@@ -20,7 +20,7 @@
 		.st5 {fill:#ffffff;stroke:#bfbfbf;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st6 {fill:#4bacc6;stroke:none;stroke-linecap:butt;stroke-width:6.375}
 		.st7 {fill:none;stroke:none;stroke-width:0.25}
-		.st8 {fill:#000000;font-family:Segoe UI;font-size:0.833336em}
+		.st8 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.833336em}
 		.st9 {fill:url(#grad3-52);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st10 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st11 {fill:url(#grad7-59);stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -56,7 +56,7 @@
 		.st41 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22935779816514}
 		.st42 {fill:url(#grad0-382);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st43 {fill:#fafafa;stroke:#ffd965;stroke-width:1.5}
-		.st44 {fill:#000000;font-family:Segoe UI;font-size:0.833336em;font-weight:bold}
+		.st44 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.833336em;font-weight:bold}
 		.st45 {fill:#0078d4;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st46 {fill:#6bb9f2;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st47 {fill:url(#grad0-565);stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -64,7 +64,7 @@
 		.st49 {fill:#37c2b1;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st50 {fill:#258277;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st51 {fill:#4672c4;stroke:#c7c8c8;stroke-width:0.25}
-		.st52 {fill:#ffffff;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st52 {fill:#ffffff;font-family:'Segoe UI', system-ui;font-size:1.00001em;font-weight:bold}
 		.st53 {fill:#107c10;stroke:none;stroke-linecap:butt;stroke-width:6.375}
 		.st54 {fill:url(#grad0-631);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st55 {fill:#e6e6e6;stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -83,7 +83,7 @@
 		.st68 {fill:none;stroke:none;stroke-width:0.75}
 		.st69 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
 		.st70 {fill:#107c10;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st71 {fill:#ffffff;font-family:Segoe UI;font-size:0.916672em;font-weight:bold}
+		.st71 {fill:#ffffff;font-family:'Segoe UI', system-ui;font-size:0.916672em;font-weight:bold}
 		.st72 {fill:#cecece;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st73 {fill:url(#grad3-795);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st74 {fill:url(#grad0-799);stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -102,7 +102,7 @@
 		.st87 {fill:url(#grad0-875);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st88 {fill:#53b1e0;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st89 {fill:url(#grad0-883);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st90 {fill:#000000;font-family:Segoe UI;font-size:0.666664em}
+		.st90 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.666664em}
 		.st91 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>

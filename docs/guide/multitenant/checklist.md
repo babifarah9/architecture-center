@@ -8,6 +8,7 @@ ms.update-cycle: 1095-days
 ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom: arb-saas
+ai-usage: ai-assisted
 ---
 
 # Multitenancy checklist on Azure
@@ -24,7 +25,13 @@ When you build your multitenant solution in Azure, there are many elements that 
 
 - Understand whether you need to separate your tenants into different [tiers](./considerations/pricing-models.md#feature--and-service-level-based-pricing). Tiers might have different pricing, features, performance promises, and geographic locations.
 
+- Define how tenants can [customize and extend your solution](./considerations/customization.md) without creating tenant-specific code forks.
+
 - Based on your customers' requirements, decide on the [tenancy models](./considerations/tenancy-models.md) that are appropriate for various parts of your solution.  
+
+- Decide whether you provide [provider-hosted, customer-hosted, or hybrid deployments](./considerations/tenancy-models.md#choose-a-hosting-and-management-model). Define ownership and operational responsibilities for each model.
+
+- If your solution uses commercial subscriptions, define how subscription states map to tenant states, entitlements, infrastructure, and retention requirements.
 
 - When you're ready, sell your B2B multitenant solution by using the [Microsoft commercial marketplace](/partner-center/marketplace-offers/plan-saas-offer).  
 
@@ -45,6 +52,8 @@ When you build your multitenant solution in Azure, there are many elements that 
 ## Security considerations  
 
 - Apply [zero trust](/security/zero-trust) and least privilege principles in all layers of your solution.
+
+- If you operate resources in tenant environments, consider how you can support the resources. Use explicit, least-privileged, time-bound, and auditable support access. Remove provider access during offboarding.
 
 - Ensure that you can correctly [map user requests](./considerations/map-requests.yml) to tenants. Consider including the tenant context as part of the identity system or via another method, like application-level tenant authorization.  
 
@@ -74,7 +83,13 @@ When you build your multitenant solution in Azure, there are many elements that 
 
 - Understand the differences between [control planes](./considerations/control-planes.md) and data planes in your multitenant solution.  
 
+- Design the control plane to reconcile commercial subscriptions, tenant state, entitlements, metering, and provisioning. Make external event processing idempotent.
+
 - Find the right balance for [deploying service updates](./considerations/updates.md). Consider both your tenants' requirements and your own operational requirements.  
+
+- For customer-hosted and hybrid deployments, provide health reporting, configuration validation, drift detection, diagnostic collection, and documented support boundaries.
+
+- Track the life cycles of external platforms, APIs, SDKs, services, and AI models that your solution depends on.
 
 - Monitor the health of the overall system and each tenant.  
 

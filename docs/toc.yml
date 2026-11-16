@@ -308,6 +308,8 @@ items:
               href: guide/multitenant/considerations/tenant-life-cycle.md
             - name: Pricing models
               href: guide/multitenant/considerations/pricing-models.md
+            - name: Customization and extensibility
+              href: guide/multitenant/considerations/customization.md
             - name: Control planes
               displayName: Tenant provisioning, management plane, admin API
               href: guide/multitenant/considerations/control-planes.md

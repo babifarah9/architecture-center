@@ -286,11 +286,15 @@ In contrast, ephemeral OS disks are stored only on the host machine, like a temp
 
 If you don't request [Azure managed disks](/azure/virtual-machines/managed-disks-overview) for the OS, AKS defaults to ephemeral OS disks if possible for a given node pool configuration.
 
-- If you select the [Standard_E2bds_v5](/azure/virtual-machines/ebdsv5-ebsv5-series#ebdsv5-series) VM size with the default OS disk size of 100 GiB, the VM supports ephemeral OS disks but only has 75 GB of temporary storage. This configuration defaults to managed OS disks if you don't specify it. If you request an ephemeral OS disk, you receive a validation error.
+Both VM sizes in the following examples support [ephemeral OS disks](/azure/virtual-machines/ebdsv5-ebsv5-series#ebdsv5-series). The examples assume that you specify the listed OS disk size. Temporary storage refers to the VM's total capacity, not the space remaining after OS disk placement.
 
-- If you request the same Standard_E2bds_v5 VM size with a 60-GiB OS disk, this configuration defaults to ephemeral OS disks. The requested size of 60 GiB is smaller than the maximum temporary storage of 75 GiB.
+| VM size | Specified OS disk size (GiB) | Temporary storage (GiB) | OS disk type when unspecified | Result when you request an ephemeral OS disk |
+| --- | --- | --- | --- | --- |
+| `Standard_E2bds_v5` | 100 | 75 | Managed. | Validation error: the OS disk exceeds temporary storage capacity. |
+| `Standard_E2bds_v5` | 60 | 75 | Ephemeral. | The OS disk fits within temporary storage capacity. |
+| `Standard_E4bds_v5` | 100 | 150 | Ephemeral. | The OS disk fits within temporary storage capacity. |
 
-- If you select the Standard_E4bds_v5 SKU with a 100-GiB OS disk, this VM size supports ephemeral OS disks and has 150 GiB of temporary storage. If you don't specify the OS disk type, Azure provisions an ephemeral OS disk to the node pool.
+Set an OS disk size, but if you don't, AKS applies a [default OS disk size](/azure/aks/concepts-storage#default-os-disk-sizing-in-aks).
 
 ### Customer-managed keys
 

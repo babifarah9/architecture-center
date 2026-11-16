@@ -2,12 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id/>
     <title>Azure Architecture Center</title>
-    <updated>2026-11-06T20:16:58.000Z</updated>
+    <updated>2026-11-12T03:37:09.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <subtitle>Updated articles for Azure Architecture Center</subtitle>
     <rights>https://learn.microsoft.com/legal/termsofuse</rights>
     <category term="new"/>
     <category term="updated"/>
+    <entry>
+        <title type="html"><![CDATA[Baseline architecture for an Azure Kubernetes Service (AKS) cluster]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/reference-architectures/containers/aks/baseline-aks#7cbec6cb24</id>
+        <link href="https://learn.microsoft.com/azure/architecture/reference-architectures/containers/aks/baseline-aks"/>
+        <updated>2026-11-12T03:37:09.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the reference architecture for the recommended baseline infrastructure that deploys an Azure Kubernetes Service (AKS) cluster.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Architectural approaches for governance and compliance in multitenant solutions]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/guide/multitenant/approaches/governance-compliance#b91156dbfd</id>
+        <link href="https://learn.microsoft.com/azure/architecture/guide/multitenant/approaches/governance-compliance"/>
+        <updated>2026-11-12T03:25:16.000Z</updated>
+        <summary type="html"><![CDATA[Learn about governance and compliance approaches for multitenant solutions, including data sovereignty, access control, and regulatory standards.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Considerations for multitenant control planes]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/control-planes#b91156dbfd</id>
+        <link href="https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/control-planes"/>
+        <updated>2026-11-12T03:25:16.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the responsibilities of control planes in multitenant solutions and how to design a control plane that meets your needs.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure App Configuration considerations for multitenancy]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/guide/multitenant/service/app-configuration#b91156dbfd</id>
+        <link href="https://learn.microsoft.com/azure/architecture/guide/multitenant/service/app-configuration"/>
+        <updated>2026-11-12T03:25:16.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the features of Azure App Configuration that are useful when you work with multitenant systems, and use the provided links for guidance and examples.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Data Factory mission-critical architecture]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/databases/architecture/azure-data-factory-mission-critical#e0301ca4e6</id>
+        <link href="https://learn.microsoft.com/azure/architecture/databases/architecture/azure-data-factory-mission-critical"/>
+        <updated>2026-11-11T20:14:19.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to design a mission-critical workload for Azure Data Factory in an Azure landing zone to build robust and efficient data pipelines.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multitenancy and Azure Queue Storage]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/guide/multitenant/service/queue-storage#1dcffb5100</id>
+        <link href="https://learn.microsoft.com/azure/architecture/guide/multitenant/service/queue-storage"/>
+        <updated>2026-11-10T23:43:58.000Z</updated>
+        <summary type="html"><![CDATA[Explore Azure Queue Storage features and isolation models for multitenant solutions, including tenant-scoped access, encryption, and monitoring.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Use Azure Kubernetes Service (AKS) in a multitenant solution]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/guide/multitenant/service/aks#0779224469</id>
+        <link href="https://learn.microsoft.com/azure/architecture/guide/multitenant/service/aks"/>
+        <updated>2026-11-10T20:35:34.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the features of Azure Kubernetes Service (AKS) that you can use when you work with multitenant systems. See guidance and examples for how to use AKS in a multitenant solution.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Run Apache Cassandra on Azure VMs]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/databases/guide/cassandra#0201fbb27c</id>
+        <link href="https://learn.microsoft.com/azure/architecture/databases/guide/cassandra"/>
+        <updated>2026-11-10T12:47:24.000Z</updated>
+        <summary type="html"><![CDATA[Examine performance considerations for running Apache Cassandra on Azure Virtual Machines. Use these recommendations as a baseline to test against your workload.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Use Azure Front Door to secure AKS workloads]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/example-scenario/aks-front-door/aks-front-door#dd63226feb</id>
+        <link href="https://learn.microsoft.com/azure/architecture/example-scenario/aks-front-door/aks-front-door"/>
+        <updated>2026-11-09T15:44:44.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to secure AKS workloads by using end-to-end TLS encryption, Azure Front Door Premium, an Azure Private Link service, and a Gateway API ingress implementation.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Workload identity and access in EKS and AKS]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/aws-professional/eks-to-aks/workload-identity#f268af2a58</id>
+        <link href="https://learn.microsoft.com/azure/architecture/aws-professional/eks-to-aks/workload-identity"/>
+        <updated>2026-11-09T14:32:45.000Z</updated>
+        <summary type="html"><![CDATA[Understand how Kubernetes clusters, nodes, and pods handle identity and access, and compare options in Amazon EKS and Azure Kubernetes Service (AKS).]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multiregion BCDR for Azure Virtual Desktop]]></title>
+        <id>https://learn.microsoft.com/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#85d8b28f9d</id>
+        <link href="https://learn.microsoft.com/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"/>
+        <updated>2026-11-08T13:57:03.000Z</updated>
+        <summary type="html"><![CDATA[Learn about the possible options and scenarios so that you can design and implement an effective multiregion BCDR strategy for Azure Virtual Desktop.]]></summary>
+        <category label="updated" term="updated"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Use Azure IoT Hub to privately upload files to an Azure Storage account]]></title>
         <id>https://learn.microsoft.com/azure/architecture/example-scenario/iot/iot-private-file-upload#a0907817dc</id>

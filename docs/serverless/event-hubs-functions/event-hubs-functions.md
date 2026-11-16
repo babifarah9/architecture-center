@@ -18,7 +18,7 @@ Solutions that use Azure Event Hubs together with Azure Functions benefit from a
 
 The following diagram shows the Event Hubs stream processing architecture.
 
-:::image type="complex" source="./images/event-hubs-architecture.svg" border="false" lightbox="./images/event-hubs-architecture.svg" alt-text="Diagram that shows the Event Hubs stream processing architecture.":::
+:::image type="complex" source="./images/event-hubs-architecture.svg" border="false" alt-text="Diagram that shows the Event Hubs stream processing architecture.":::
     The diagram flow starts with the event producers. Three protocol labels, HTTPS, AMQP, and Kafka, appear to the right of the producers, indicating the supported ingress protocols. A single arrow points from the producers through these protocols into the central component, a large box labeled Azure Event Hubs. Inside the Azure Event Hubs box, there are four partitions. To the right of the Azure Event Hubs box, there are two consumer groups arranged vertically. To the right of the consumer groups, there are eight event receivers. Solid arrows point from the top four event receivers through consumer group 1 and then to all four partitions. Dashed arrows point from the bottom four event receivers through consumer group 2 and then to all four partitions.
 :::image-end:::
 

@@ -12,7 +12,7 @@ For caches that don't provide this functionality, the applications that use the 
 
 An application can emulate the functionality of read-through caching by implementing the Cache-Aside pattern. This strategy loads data into the cache on demand. The following diagram uses the Cache-Aside pattern to store data in the cache.
 
-:::image type="complex" source="./_images/cache-aside-diagram.svg" alt-text="Diagram that shows the use of the Cache-Aside pattern to read and store data in the cache." border="false" lightbox="./_images/cache-aside-diagram.svg":::
+:::image type="complex" source="./_images/cache-aside-diagram.svg" alt-text="Diagram that shows the use of the Cache-Aside pattern to read and store data in the cache." border="false":::
    The diagram includes an app, cache, and data store. The cache points to the app, labeled step 1. The data store points to the app, labeled step 2. The app points to the cache, labeled step 3.
 :::image-end:::
 

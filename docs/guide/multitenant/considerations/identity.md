@@ -7,6 +7,7 @@ ms.date: 12/16/2025
 ms.topic: concept-article
 ms.subservice: architecture-guide
 ms.custom: arb-saas
+ai-usage: ai-assisted
 ---
 
 # Architectural considerations for identity in a multitenant solution
@@ -207,6 +208,16 @@ These models are distinct, and the approach that you select affects your impleme
 
 In some solutions, you might use [per-user licensing](pricing-models.md#per-user-pricing) as part of your commercial pricing model. In this scenario, you provide different tiers of user licenses that have different capabilities. For example, users with one license might be permitted to use a subset of the features of the application. The capabilities that specific users are allowed to access, based on their licenses, is sometimes called an *entitlement*.
 
+Entitlements aren't limited to per-user licenses. You might apply them at several scopes:
+
+- **User entitlements:** A user can access a specific feature or perform an operation.
+- **Tenant entitlements:** Every authorized user in a tenant can access a purchased capability.
+- **Resource entitlements:** A tenant can create or use a limited number of resources, devices, projects, environments, or other units.
+- **Consumption entitlements:** A tenant can consume a purchased quantity or reserved capacity.
+- **Service-level entitlements:** A tenant receives specific isolation, performance, support, reliability, or regional characteristics.
+
+Model entitlement scope explicitly. Don't infer tenant entitlements from a user's role, and don't use feature flags as a permanent licensing system.
+
 We recommend that you track and enforce entitlements within your application code or a dedicated entitlements system, rather than relying on the identity system. This process is similar to authorization but occurs outside the identity management layer.
 
 There are several reasons for this separation:
@@ -216,6 +227,10 @@ There are several reasons for this separation:
 - **Independence:** Relying on identity provider features for license management can lock your solution into that provider or its constraints. If you support customers who use different identity providers, you would need to build a custom solution for them anyway.
 
 A common pattern is to manage licenses within the application's database or a dedicated service. When a user signs in, the identity provider retrieves their entitlements and injects them into the authorization token as custom claims that can be checked by the application components at run time.
+
+Treat the entitlements system as the authoritative source for purchased capabilities. Define how it receives changes from commerce or billing systems, how quickly changes take effect, and how your application behaves if the entitlements system is unavailable.
+
+Entitlement changes can require more than an authorization update. For example, a tenant that purchases stronger isolation or a different data residency option might need to move to another deployment. Coordinate these changes through your [control plane](control-planes.md#coordinate-the-commercial-and-technical-life-cycles).
 
 ## Identity scale and authentication volume
 
@@ -257,4 +272,3 @@ Other contributors:
 ## Next step
 
 Learn about [considerations when you work with domain names in a multitenant application](domain-names.md).
-

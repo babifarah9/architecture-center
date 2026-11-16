@@ -18,7 +18,7 @@
 		.st3 {fill:#4bacc6;stroke:none;stroke-linecap:butt;stroke-width:6.37499}
 		.st4 {fill:none;stroke:none;stroke-width:0.25}
 		.st5 {fill:#5b9bd5;font-family:Calibri;font-size:0.833336em;font-weight:bold}
-		.st6 {fill:#000000;font-family:Segoe UI;font-size:0.833336em}
+		.st6 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.833336em}
 		.st7 {font-size:1em}
 		.st8 {fill:url(#grad7-24);stroke:none;stroke-linecap:butt;stroke-width:0.749999}
 		.st9 {fill:#ffffff;fill-opacity:0.6;stroke:none;stroke-linecap:butt;stroke-width:0.749999}
@@ -54,7 +54,7 @@
 		.st39 {fill:url(#grad7-237);stroke:none;stroke-linecap:butt;stroke-width:0.749999}
 		.st40 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
 		.st41 {fill:#107c10;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
-		.st42 {fill:#ffffff;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st42 {fill:#ffffff;font-family:'Segoe UI', system-ui;font-size:1.00001em;font-weight:bold}
 		.st43 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>

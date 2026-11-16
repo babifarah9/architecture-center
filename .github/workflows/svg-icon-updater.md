@@ -1,4 +1,5 @@
 ---
+emoji: "🖼️"
 name: SVG icon updater
 description: Evaluate all service icon instances in one architecture SVG and propose high-confidence icon updates.
 intent: Ensure every service icon instance in an architecture diagram is evaluated for alignment with official artwork, without changing diagram meaning.
