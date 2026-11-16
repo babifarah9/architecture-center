@@ -1,0 +1,25 @@
+### YamlMime:Architecture
+metadata:
+  title: Transactable multitenant SaaS with Marketplace integration
+  description: Learn how to architect a multitenant SaaS application in Azure Container Apps with Microsoft Marketplace subscriptions, identity, tenant isolation, and lifecycle reconciliation.
+  author: babifarah9
+  ms.author: babifarah9
+  ms.date: 11/16/2026
+  ms.topic: example-scenario
+  ms.subservice: example-scenario
+  ms.category:
+    - web
+    - security
+name: Transactable multitenant SaaS with Marketplace integration
+azureCategories:
+  - web
+  - security
+summary: Design a transactable multitenant SaaS application in Azure Container Apps with Entra authentication, private PostgreSQL tenant isolation, and Microsoft Marketplace subscription management.
+products:
+  - azure-container-apps
+  - azure-database-postgresql
+  - azure-key-vault
+  - azure-container-registry
+  - azure-monitor
+content: |
+  [!INCLUDE[](transactable-multitenant-saas-marketplace-content.md)]
