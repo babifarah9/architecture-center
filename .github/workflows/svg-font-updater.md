@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: daily
+  permissions:
+    pull-requests: read
   skip-if-match: 'is:pr is:open "gh-aw-workflow-id: svg-font-updater" in:body'
 
 if: github.repository == 'MicrosoftDocs/architecture-center-pr' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)

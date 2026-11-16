@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: weekly on tuesday
+  permissions:
+    pull-requests: read
   skip-if-match: 'is:pr is:open "gh-aw-workflow-id: link-orphaned-articles" in:body'
 
 if: github.repository == 'MicrosoftDocs/architecture-center-pr' && github.ref == 'refs/heads/main'
