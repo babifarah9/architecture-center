@@ -23,7 +23,7 @@
 		.st8 {fill:#f2f2f2;fill-opacity:0.55;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st9 {fill:none;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st10 {fill:#f2f2f2;stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st11 {fill:#000000;font-family:Segoe UI;font-size:0.916672em}
+		.st11 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.916672em}
 		.st12 {font-size:1em}
 		.st13 {fill:url(#grad7-45);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st14 {fill:#ffffff;fill-opacity:0.6;stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -33,7 +33,7 @@
 		.st18 {fill:url(#grad0-77);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st19 {fill:#b4ec36;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st20 {fill:#5ea0ef;stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st21 {fill:#000000;font-family:Segoe UI;font-size:1.00001em}
+		.st21 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:1.00001em}
 		.st22 {fill:url(#grad1-92);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st23 {fill:#59b4d9;stroke:none;stroke-linecap:butt;stroke-width:12.24}
 		.st24 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:12.24}
@@ -41,7 +41,7 @@
 		.st26 {fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-linecap:butt;stroke-width:12.24}
 		.st27 {fill:none;stroke:#000000;stroke-width:0.75}
 		.st28 {fill:none;stroke:none;stroke-width:0.25}
-		.st29 {fill:#000000;font-family:Segoe UI;font-size:1.00001em;font-style:italic}
+		.st29 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:1.00001em;font-style:italic}
 		.st30 {fill:#949494;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st31 {fill:url(#grad0-188);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st32 {fill:url(#grad0-197);stroke:#ffffff;stroke-width:0.25}
@@ -50,13 +50,13 @@
 		.st35 {stroke:#ffffff;stroke-width:0.25}
 		.st36 {marker-end:url(#mrkr4-215);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 		.st37 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.37313432835821}
-		.st38 {fill:#000000;font-family:Segoe UI;font-size:0.916672em;font-style:italic}
+		.st38 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:0.916672em;font-style:italic}
 		.st39 {marker-end:url(#mrkr4-215);stroke:#000000;stroke-dasharray:4.5,4.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 		.st40 {fill:#feffff;stroke:none;stroke-width:0.25}
 		.st41 {fill:url(#grad0-250);stroke:none;stroke-linecap:butt;stroke-width:34.0001}
 		.st42 {fill:#50e6ff;stroke:none;stroke-linecap:butt;stroke-width:34.0001}
 		.st43 {fill:#1490df;stroke:none;stroke-linecap:butt;stroke-width:34.0001}
-		.st44 {fill:#000000;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st44 {fill:#000000;font-family:'Segoe UI', system-ui;font-size:1.00001em;font-weight:bold}
 		.st45 {fill:url(#grad0-280);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st46 {fill:#50e6ff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st47 {fill:#1490df;stroke:none;stroke-linecap:butt;stroke-width:0.75}
