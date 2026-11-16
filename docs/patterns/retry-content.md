@@ -87,7 +87,7 @@ An architect should evaluate how the Retry pattern can be used in their workload
 
 | Pillar | How this pattern supports pillar goals |
 | :----- | :------------------------------------- |
-| [Reliability](/azure/well-architected/reliability/checklist) design decisions help your workload become **resilient** to malfunction and to ensure that it **recovers** to a fully functioning state after a failure occurs. | Mitigating transient faults in a distributed system is a core technique for improving a workload's resilience.<br/><br/> - [RE:07 Self-preservation](/azure/well-architected/reliability/self-preservation)<br/> - [RE:07 Transient faults](/azure/well-architected/reliability/handle-transient-faults) |
+| [Reliability](/azure/well-architected/reliability/checklist) design decisions help your workload become **resilient** to malfunction and to ensure that it **recovers** to a fully functioning state after a failure occurs. | Mitigating transient faults in a distributed system is a core technique for improving a workload's resilience.<br/><br/> - [RE:07 Self-preservation](/azure/well-architected/reliability/self-preservation)<br/> - [Transient faults](/azure/well-architected/design-guides/handle-transient-faults) |
 
 As with any design decision, consider any tradeoffs against the goals of the other pillars that might be introduced with this pattern.
 
