@@ -112,8 +112,7 @@ env:
   SVG_FONT_DATA: /tmp/gh-aw/agent/svg-font-updater
 
 tools:
-  bash:
-    - "git diff --no-ext-diff --no-textconv HEAD --"
+  bash: true
 
 steps:
   - name: Set up Node
